@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat2</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Enter The Number");
+        for (var i = 1; i <= num; i++) {
+            var pyramid = "";
+            for (var j = 1; j <= num-i; j++) {
+                pyramid = pyramid + " ";
+            }
+            for (var k = 1; k <= (2*i) - 1; k++) {
+                pyramid = pyramid + "*";
+            }
+            console.log(pyramid);
+        }
+    </script>
+</body>
+</html>
